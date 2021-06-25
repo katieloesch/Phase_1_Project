@@ -39,11 +39,11 @@ function addComment(event){
 
     comments.appendChild(commentP)
     document.getElementById("comment-input").value = ""
+    document.getElementById("name-input").value = ""
     }
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    getQuote()
     quoteGeneratorBtn.addEventListener("click", getQuote)
     commentSubmitButton.addEventListener("click", addComment)
     

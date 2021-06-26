@@ -16,13 +16,23 @@ body {
     align-items: center;
   }
 
-#comments {
-    font-size: 18px;
-    
+img {
+    border-radius: 60%;
+    padding: 5px;
+    max-width: 120%;
+    min-height: 80%;
+    position:relative;
+    top: -25px;
+    left: -30px;
 }
 
+ul {
+    list-style-type: none;
+    font-size: 20px;
+    cursor: pointer;
+}
 
-  .container {
+.container {
       flex-direction: column;
       justify-content: flex-end;
       padding: 70px;
@@ -30,15 +40,14 @@ body {
       height: 70%;
       background-color: #fffeea;
       border-radius: 50px;
-  }
+}
 
-  #author {
-      font-style: italic;
-      text-align: right;
-  }
+.commLabel {
+font-size: 20px;
+}
 
-  .btn {
-      width: 22%;
+.btn {
+      width: 30%;
       margin: 35px;
       padding: 7px;
       border-radius: 5px;
@@ -52,19 +61,63 @@ body {
       transition: .5s ease;
   }
 
+#pic-div{
+    background-color:  #ddecc1;
+    flex: 1.5;
+    min-width: 30%;   
+}
+
+#quote-div{
+    background-color: #ecfcdc;
+    align-items: center;
+    height: 80%;
+}
+
+#comment-div{
+    background-color: #d9edc3;
+    max-width: 30%;
+}
+
+#author {
+      font-style: italic;
+      font-size: 26px;
+      text-align: right;
+}
+
+#quote{
+    font-size: 32px;
+    text-align: left;
+}
+
+#comments {
+    font-size: 18px;    
+}
+
+#commTitle{
+    font-size: 26px;
+}
+
+
 #quote-generator-btn {
       font-size: 24px;
-      width: 60%;
+      width: 70%;
       align-items: center;
       color: white;
       padding: 15px;
-  }
+      position:relative;
+      top: -25px;
+      left: 30px;
+}
 
-#search-btn {
-    width: 30%;
-    position:relative;
-    top: -25px;
-    left: -32px;
+#animal-generator-btn {
+      font-size: 24px;
+      width: 90%;
+      align-items: center;
+      color: white;
+      padding: 15px;
+      position:relative;
+      top: -25px;
+      left: -25px;
 }
 
 #submit-comment {
@@ -72,22 +125,6 @@ body {
     top: -25px;
     left: -32px;
 }
-#search-div{
-    background-color:  #ddecc1;
-    text-align: left;
-    flex: 0.5;
-    
-}
-
-#quote-div{
-    background-color: #ecfcdc;
-    align-items: center;
-}
-
-#comment-div{
-    background-color: #d9edc3;
-}
-
 
 .btn:hover {
       color: white;
@@ -100,3 +137,6 @@ body {
     font-size: 17px;
 }
 
+.activated {
+  color: red;
+}

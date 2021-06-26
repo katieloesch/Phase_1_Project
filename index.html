@@ -4,47 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Inspirational Quote Generator</title>
-  <style></style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <div class="container" id="search-div">
-    <h2>Search</h2>
-        <form id="search-form" action="">
-        <input type='text' id="search-quote">
-        <button class="btn" id='search-btn'>search</button>
-        </form>
-        <h2 id="search-authors"> Authors:</h2l>
+    <div class="container" id="pic-div">
+        <button class="btn" id="animal-generator-btn" type="submit">get cute animal pic </button>
+        <img>
     </div>
 
-
     <div class="container" id="quote-div">
-        <button class="btn" id="quote-generator-btn" type="submit">get random quote</button>
+        <button class="btn" id="quote-generator-btn" type="submit">get inspirational quote</button>
          <br>
          <br>
          <h2 id="quote"></h2>
-         <br>
+         <ul>
+         <li id="like-btn"> <span class="like-glyph"></span></li>
          <h3 id="author"></h3>
     </div>
 
-
-
-
-
     <div class="container" id="comment-div">
         <form id="comment-form" action="">
-        <h2>Leave a comment</h2>
-        <br>
-        <h3>Name:</h3>
+        <p class="comm" id="commTitle">Leave a comment</p>
+        <label class="commLabel">Name:</label>
         <input type='text' id="name-input">
-        <h3>Comment:</h3>
-        <input type='text' id="comment-input"><br>
-        
+        <label class="commLabel">Comment:</label>
+        <input type='text' id="comment-input">
         <button class="btn" id='submit-comment'>submit</button>
         </form>
-
          <div id="comments"> </div>
     </div>
 

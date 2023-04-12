@@ -1,14 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
 body {
-  margin: 0;
+  margin: 5% 10%;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Comfortaa', Tahoma,  cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ACE1AF;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.input {
+  border: 4px solid #01411C;
+  background-color: #ACE1AF;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  font-family: 'Comfortaa', Tahoma,  cursive;
+  padding: 5px;
+  margin-right: 10px;
+  color: #01411C;
+
+}
+
+.input:focus {
+  outline: none;
+}
+
+.btn-show, .btn-submit {
+  background-color: #ACE1AF;
+  border: 4px solid #01411C;
+  font-size: 1.5rem;
+  color: #01411C;
+  padding: 5px;
+  border-radius: 8px;
+  font-family: 'Comfortaa', Tahoma,  cursive;
+}
+
+
+
+.btn-show:hover, .btn-submit:hover {
+  background-color: #01411C;
+  border: 4px solid #01411C;
+  color: #ACE1AF;
+}
+
+.btn-completed {
+  background-color: #ACE1AF;
+  border: 4px solid #01411C;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 24px;
+}
+
+h1 {
+  color: #01411C;
+  font-size: 3rem;
+}
+
+h2 {
+  color: #01411C;
+  font-size: 2.25rem;
 }

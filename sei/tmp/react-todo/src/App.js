@@ -37,9 +37,15 @@ function App() {
   return (
     <div className="App">
     <h1>React To-Do</h1>
-     <button onClick={() => setShowTodos(!showTodos)}>{showTodos ? 'Hide' : 'Show'}</button>
+     <button className="btn-show" onClick={() => setShowTodos(!showTodos)}>{showTodos ? 'Hide' : 'Show'}</button>
      {showTodos && <ToDoList todos={todos} deleteTodo={deleteTodo} markAsCompleted={markAsCompleted}/>}
-     <hr />
+     <br></br>
+      <hr  style={{
+        color: '#01411C',
+        backgroundColor: '#01411C',
+        height: .5,
+        borderColor : '#01411C'
+      }}/>
      <NewToDoForm addTodo={addTodo}/>
     </div>
   );

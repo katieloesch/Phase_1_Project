@@ -13,7 +13,7 @@ export default function TodoListItem({todo, index, deleteTodo, markAsCompleted} 
         <li 
             className='ToDoListItem'
             style={{
-                backgroundColor: index % 2 ? "#E6E6FA" : "#d8bfd8"
+                backgroundColor: index % 2 ? "#406322" : "#01411C"
             }}
         >
         <span
@@ -25,7 +25,7 @@ export default function TodoListItem({todo, index, deleteTodo, markAsCompleted} 
         <span className='itemSpan' style={{ textDecoration: todo.completed && "line-through" }}>
             {todo.text}
         </span>
-        <button onClick={handleClick}>{todo.completed ? "❌" : "✔️" }</button>
+        <button className='btn-completed' onClick={handleClick}>{todo.completed ? "❌" : "✔️" }</button>
 
         </li>
     )

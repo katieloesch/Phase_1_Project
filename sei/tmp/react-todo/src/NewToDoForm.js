@@ -14,15 +14,16 @@ export default function NewToDoForm({ addTodo }) {
 
   return (
     <>
-        <h2>New To-Do</h2>
-        <form onSubmit={handleAddTodo}>
+        <h2 className="h2">New To-Do</h2>
+        <form className="form" onSubmit={handleAddTodo}>
             <input
             value={newTodo}
             onChange={(e) => setNewTodo(e.target.value)}
             placeholder="add new task..."
             required={true}
+            className="input"
             />
-            <button type="submit">add</button>
+            <button className='btn-submit' type="submit">add</button>
         </form>
     </>
   )
